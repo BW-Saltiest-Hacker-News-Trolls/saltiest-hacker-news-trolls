@@ -53,6 +53,7 @@ git submodule update
 cd <submodule>
 git checkout master
 git merge <branch_name>
+git push upstream master
 git checkout master
 cd ..
 git add .
