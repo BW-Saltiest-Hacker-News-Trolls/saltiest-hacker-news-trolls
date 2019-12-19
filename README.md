@@ -24,3 +24,18 @@ git checkout master
 ```
 You will want to run the last step after pushing to `upstream` but before
 checking out `master` in order to avoid merge conflicts.
+
+If you do happen to run into a merge conflict, you can always restore the repo
+by pushing your submodule to upstream, then deleting the main repository `rm -r
+saltiest-hacker-news-trolls` and re-cloning:
+```
+git clone git@github.com:BW-Saltiest-Hacker-News-Trolls/saltiest-hacker-news-trolls.git
+cd saltiest-hacker-news-trolls
+git submodule init
+git submodule update
+cd <your_submodule>
+git checkout master
+cd ..
+git add .
+git commit -m 'Update submodule <submodule>'
+```
