@@ -12,6 +12,7 @@ git checkout master
 cd ..
 git add .
 git commit -m 'Update submodule <submodule>'
+git push origin master
 ```
 7. Done!
 8. To keep everyone else's changes up to date, `cd` out of your submodule and
@@ -39,6 +40,7 @@ git checkout master
 cd ..
 git add .
 git commit -m 'Update submodule <submodule>'
+git push origin master
 ```
 
 If you want to use a separate branch (other than `master`), your workflow will look like:
@@ -53,8 +55,10 @@ git submodule update
 cd <submodule>
 git checkout master
 git merge <branch_name>
+git push upstream master
 git checkout master
 cd ..
 git add .
 git commit -m 'Update submodule <submodule>'
+git push origin master
 ```
