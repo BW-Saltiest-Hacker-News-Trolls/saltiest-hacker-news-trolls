@@ -1,12 +1,3 @@
-[submodule "flask_models"]
-	path = flask_models
-	url = https://github.com/BW-Saltiest-Hacker-News-Trolls/flask_models.git
-[submodule "flask_backend"]
-	path = flask_backend
-	url = https://github.com/BW-Saltiest-Hacker-News-Trolls/flask_backend.git
-[submodule "flask_modeling"]
-	path = flask_modeling
-	url = https://github.com/BW-Saltiest-Hacker-News-Trolls/flask_modeling.git
 [submodule "node_backend"]
 	path = node_backend
 	url = https://github.com/BW-Saltiest-Hacker-News-Trolls/node_backend.git
