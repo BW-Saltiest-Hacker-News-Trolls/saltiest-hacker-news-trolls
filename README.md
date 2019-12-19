@@ -34,6 +34,7 @@ cd saltiest-hacker-news-trolls
 git submodule init
 git submodule update
 cd <your_submodule>
+git remote add upstream <URL>
 git checkout master
 cd ..
 git add .
