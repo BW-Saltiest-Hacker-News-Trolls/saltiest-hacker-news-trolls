@@ -40,3 +40,21 @@ cd ..
 git add .
 git commit -m 'Update submodule <submodule>'
 ```
+
+If you want to use a separate branch (other than `master`), your workflow will look like:
+```
+cd <submodule>
+git checkout <branch_name>
+git push upstream <branch_name>
+# Ready to push your changes to the main repo
+cd ..
+git pull
+git submodule update
+cd <submodule>
+git checkout master
+git merge <branch_name>
+git checkout master
+cd ..
+git add .
+git commit -m 'Update submodule <submodule>'
+```
