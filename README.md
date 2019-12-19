@@ -14,10 +14,13 @@ git add .
 git commit -m 'Update submodule <submodule>'
 ```
 7. Done!
-8. To keep everyone else's changes up to date, `cd` out of your submodule and into the main repo and run:
+8. To keep everyone else's changes up to date, `cd` out of your submodule and
+   into the main repo and run:
 ```
 git pull
 git submodule update
 cd <your_submodule>
 git checkout master
 ```
+You will want to run the last step after pushing to `upstream` but before
+checking out `master` in order to avoid merge conflicts.
