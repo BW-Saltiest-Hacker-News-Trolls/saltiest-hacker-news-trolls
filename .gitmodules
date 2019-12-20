@@ -4,3 +4,9 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/BW-Saltiest-Hacker-News-Trolls/frontend.git
+[submodule "flask_backend"]
+	path = flask_backend
+	url = https://github.com/BW-Saltiest-Hacker-News-Trolls/flask_backend.git
+[submodule "flask_modeling"]
+	path = flask_modeling
+	url = https://github.com/BW-Saltiest-Hacker-News-Trolls/flask_modeling.git
